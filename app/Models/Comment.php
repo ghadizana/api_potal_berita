@@ -15,7 +15,7 @@ class Comment extends Model
         'post_id', 'user_id', 'comments_content'
     ];
 
-    public function comentator(): BelongsTo
+    public function commentator(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
